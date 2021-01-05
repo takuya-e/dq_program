@@ -1,14 +1,6 @@
 require_relative "character"
 
 class Brave < Character
-  attr_accessor :name, :hp, :offense, :defense
-
-  def initialize(**params)
-    @name = params[:name]
-    @hp = params[:hp]
-    @offense = params[:offense]
-    @defense = params[:defense]
-  end
 
   def attack(monster)
     puts "#{@name} の攻撃!"
