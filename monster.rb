@@ -9,20 +9,5 @@ class Monster < Character
       #{brave.name} は #{brave_damage} のダメージを受けた!
       *=*=*=*=*=*=*=*=*=*=*
     TEXT
-    if brave.hp < 0
-       brave.hp = 0
-    puts <<~TEXT
-    【#{brave.name}】HP: #{brave.hp}
-    【#{@name}】HP: #{@hp}
-    *=*=*=*=*=*=*=*=*=*=*
-    #{brave.name} はしんでしまった!
-    TEXT
-    else
-    puts <<~TEXT
-    【#{brave.name}】HP: #{brave.hp}
-    【#{@name}】HP: #{@hp}
-    *=*=*=*=*=*=*=*=*=*=*
-    TEXT
-    end
   end
 end
